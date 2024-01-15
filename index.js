@@ -16,7 +16,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 /** Middlewares **/
 app
-  .use(cors())
+  .use(cors("*"))
   .use(bodyParser.json({ limit: "50mb" }))
 
 //routes
