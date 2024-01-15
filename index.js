@@ -36,7 +36,7 @@ app.post('/upload-audio', upload.single('audio'), async(req, res) => {
   const audioData = req?.file?.buffer; // This is the audio data in Buffer format
   console.log("🚀 ~ file: index.js:36 ~ app.post ~ audioData:", req.file  )
 
-  const { originalname, mimetype, size, buffer } = req.file;
+  const { originalname, mimetype, size, buffer } = req.file
 
     // Create a new file document
     const newFile = new File({
